@@ -16,7 +16,7 @@ export class App {
   private router = inject(Router);
   routes: RouteType[] = [
     { name: 'Home', path: '/', isSelected: true },
-    { name: 'Dashboard', path: '/Dashboard', isSelected: false },
+    { name: 'Facts', path: '/facts', isSelected: false },
   ];
   private periousOption: RouteType = this.routes[0];
   select(routeName: string) {
@@ -29,7 +29,6 @@ export class App {
   }
   ngOnInit() {
     const currentPath = this.router.url;
-    console.log(currentPath);
     const match = this.routes.find((route) => route.path === currentPath);
     if (match) {
       this.select(match.name);

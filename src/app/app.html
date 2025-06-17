@@ -1,24 +1,18 @@
 <div class="page">
-  <div class="left">
-    <h1>Fixed page</h1>
-    <p>The content in this page won't change</p>
-  </div>
-  <div class="right">
-    <h1>Router page</h1>
-    <div class="navagiation">
-      <div class="links">
-        @for (route of routes; track $index) {
-        <a
-          [routerLink]="route.path"
-          (click)="select(route.name)"
-          [class.selected]="route.isSelected"
-          >{{route.name}}</a
-        >
-        }
-      </div>
-      <div class="router">
-        <router-outlet></router-outlet>
-      </div>
+  <h1>Facts Page</h1>
+  <div class="navigation">
+    <div class="links">
+      @for (route of routes; track $index) {
+      <a
+        [routerLink]="route.path"
+        (click)="select(route.name)"
+        [class.selected]="route.isSelected"
+        >{{route.name}}</a
+      >
+      }
     </div>
+  </div>
+  <div class="router">
+    <router-outlet></router-outlet>
   </div>
 </div>
