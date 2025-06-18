@@ -5,7 +5,6 @@
       @for (route of routes; track $index) {
       <a
         [routerLink]="route.path"
-        (click)="select(route.name)"
         [class.selected]="route.isSelected"
         >{{route.name}}</a
       >
