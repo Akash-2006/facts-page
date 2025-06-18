@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 .sonar-project.properties
 .scannerwork/
+.scannerwork/report-task.txt
