@@ -1,9 +1,10 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject, Input } from "@angular/core";
 import { Topic } from '../../../interfaces/news';
 import { FactsService } from '../facts.service';
 
 @Component({
   selector: 'app-fact',
+  standalone: true,
   imports: [],
   templateUrl: './fact.html',
   styleUrl: './fact.css',
