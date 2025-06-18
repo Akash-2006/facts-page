@@ -10,7 +10,7 @@ import { Fact } from './fact/fact';
   styleUrl: './facts.css',
 })
 export class Facts {
-  private readonly factServices = inject(FactsService);
+  private factServices = inject(FactsService);
   getTasks() {
     return this.factServices.fetchTasks();
   }

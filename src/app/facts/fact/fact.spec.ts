@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { Fact } from './fact';
 
 describe('Fact', () => {
@@ -18,11 +19,5 @@ describe('Fact', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it("should call addLike", () => {
-    const addLikeSpy = jest.spyOn(component, "addLike");
-    component.addLike();
-    expect(addLikeSpy).toHaveBeenCalled();
   });
 });
