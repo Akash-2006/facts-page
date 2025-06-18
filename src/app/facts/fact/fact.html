@@ -1,17 +1,43 @@
+<!--<div class="card">-->
+<!--  <h4>{{fact?.title}}</h4>-->
+<!--  <div class="img"><img [src]="fact?.id+'.png'" alt="" /></div>-->
+<!--  <button type="button" class="btn" (click)="addLike()">-->
+<!--    <strong>Likes {{fact?.likes}}</strong>-->
+<!--    <div id="container-stars">-->
+<!--      <div id="stars"></div>-->
+<!--    </div>-->
+
+<!--    <div id="glow">-->
+<!--      <div class="circle"></div>-->
+<!--      <div class="circle"></div>-->
+<!--    </div>-->
+<!--  </button>-->
+
+
+<!--  <a [href]="fact?.source">More info</a>-->
+<!--</div>-->
+
 <div class="card">
-  <h4>{{fact?.title}}</h4>
-  <div class="img"><img [src]="fact?.id+'.png'" alt="" /></div>
-  <button type="button" class="btn" (click)="addLike()">
-    <strong>Likes {{fact?.likes}}</strong>
-    <div id="container-stars">
-      <div id="stars"></div>
-    </div>
+<div class="book">
+  <p>{{fact?.description}}</p>
+  <div class="cover">
+    <div class="cover-inner">
+    <h4>{{fact?.title}}</h4>
+    <div class="img"><img [src]="fact?.id+'.png'" alt="" /></div>
+    <button type="button" class="btn" (click)="addLike()">
+      <strong>Likes {{fact?.likes}}</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
 
-    <div id="glow">
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-  </button>
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
 
-  <a [href]="fact?.source">More info</a>
+
+    </div>
+  </div>
+</div>
 </div>
